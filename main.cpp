@@ -127,7 +127,16 @@ public:
     // Get all edges in the graph
     vector<pair<int, int>> getEdges() const {
         vector<pair<int, int>> edges;
-        //TODO: implement this function 
+        //Done: implement this function 
+
+        for (int i = 0; i < numVertices; ++i) {
+            for (int j = 0; j < numVertices; ++j) {
+                if (adjMatrix[i][j] == 1) {
+                    edges.push_back(make_pair(i, j));
+                }
+            }
+        }
+        
         return edges;
     }
 
