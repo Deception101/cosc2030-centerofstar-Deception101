@@ -144,7 +144,7 @@ public:
     int findCenterOfStar(const Graph& g) {
         //Done: implement this function
         
-                vector<pair<int, int>> edges = g.getEdges();
+        vector<pair<int, int>> edges = g.getEdges();
 
 
         vector<int> appearances(g.getNumVertices(), 0);
